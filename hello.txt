@@ -1,6 +1,0 @@
-Hi Programming
-git add *
-git commit -m (comment)
-git push
-touch filename.txt (creates filename.txt)
-git status (tells you which file has not been committed)

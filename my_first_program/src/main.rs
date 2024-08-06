@@ -1,44 +1,39 @@
-fn enum_as_struct_field() {
-    #[derive(Debug)]
-    #[allow(dead_code)]
-    enum Genre {
-        Fiction,
-        NonFiction,
-        ScienceFiction,
-    }
-
-    #derive(Debug)
-    enum Year {
-        Freshman,
-        Sophmore,
-        Junior,
-        Senior
-    }
-    
-    struct Student {
-        name: String,
-        year: Year,
-        gpa: f32,
-    }
-
-    impl Student{
-        fn new(name:&str,year:Year) -> {
-            Student{
-                name: name.to_string();
-                year:year,
-                gpa: 3.5,
+fn motivation_example() {
+    // Problem: find the largest element
+    // For integers 32
+    fn largest_int(list: &[i32]) -> i32 {
+        let mut largest = list[0];
+        for &item in list.iter() {
+            if item > largest {
+                largest = item;
             }
         }
+        largest
     }
-    
-    let my_book = Book {
-        title: String::from("Rust Programming"),
-        genre: Genre::NonFiction,
-        review_score: 5,
-    };
-}
 
-fn main(){
+    // For floats 32
+    fn largest_float(list: &[f32]) -> f32 {
+        let mut largest = list[0];
+        for &item in list.iter() {
+            if item > largest {
+                largest = item;
+            }
+        }
+        largest
+    }
 
-    println!("{} is a {:?} book with a score of {}", my_book.title, my_book.genre, my_book.review_score);
+    // For char
+    fn largest_char(list: &[char]) -> char {
+        let mut largest = list[0];
+        for &item in list.iter() {
+            if item > largest {
+                largest = item;
+            }
+        }
+        largest
+    }
+
+    println!("{}", largest_int(&[1, 2, 5]));
+    println!("{}", largest_float(&[1.5, 2.6, 5.9]));
+    println!("{}", largest_char(&['A', 'B', 'C']));
 }

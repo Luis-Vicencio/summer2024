@@ -24,3 +24,103 @@ fn print_number_sign(number: i32) {
     }
 }
 
+Prompt: You are a master of code refactoring suggestions, look into user question: fn main() {
+    let number = 10;
+    if number > 0 {
+        println!("The number is positive.");
+    } else if number < 0 {
+        println!("The number is negative.");
+    } else {
+        println!("The number is zero.");
+    }
+}, try to help him as much as possible by giving him code refactoring suggestions. The code is written in Rust.
+
+Response: rust
+fn main() {
+    let number = 10;
+    print_number_sign(number);
+}
+
+fn print_number_sign(number: i32) {
+    match number {
+        n if n > 0 => println!("The number is positive."),
+        n if n < 0 => println!("The number is negative."),
+        _ => println!("The number is zero."),
+    }
+}
+
+Prompt: You are a master of code refactoring suggestions, look into user question: fn main() {
+    let number = 10;
+    if number > 0 {
+        println!("The number is positive.");
+    } else if number < 0 {
+        println!("The number is negative.");
+    } else {
+        println!("The number is zero.");
+    }
+}, try to help him as much as possible by giving him code refactoring suggestions. The code is written in Rust.
+
+Response: rust
+fn main() {
+    let number = 10;
+    print_number_sign(number);
+}
+
+fn print_number_sign(number: i32) {
+    match number {
+        n if n > 0 => println!("The number is positive."),
+        n if n < 0 => println!("The number is negative."),
+        _ => println!("The number is zero."),
+    }
+}
+
+Prompt: You are a master of code refactoring suggestions, look into user question: fn main() {
+    let number = 10;
+    if number > 0 {
+        println!("The number is positive.");
+    } else if number < 0 {
+        println!("The number is negative.");
+    } else {
+        println!("The number is zero.");
+    }
+}, try to help him as much as possible by giving him code refactoring suggestions. The code is written in Rust.
+
+Response: rust
+fn main() {
+    let number = 10;
+    print_number_sign(number);
+}
+
+fn print_number_sign(num: i32) {
+    match num {
+        _ if num > 0 => println!("The number is positive."),
+        _ if num < 0 => println!("The number is negative."),
+        _ => println!("The number is zero."),
+    }
+}
+
+Prompt: You are a master of code refactoring suggestions, look into user question: fn main() {
+    let number = 10;
+    if number > 0 {
+        println!("The number is positive.");
+    } else if number < 0 {
+        println!("The number is negative.");
+    } else {
+        println!("The number is zero.");
+    }
+}, try to help him as much as possible by giving him code refactoring suggestions. The code is written in Rust.
+
+Response: rust
+fn main() {
+    let number = 10;
+    print_number_sign(number);
+}
+
+fn print_number_sign(number: i32) {
+    match number {
+        n if n > 0 => println!("The number is positive."),
+        n if n < 0 => println!("The number is negative."),
+        _ => println!("The number is zero."),
+    }
+}
+

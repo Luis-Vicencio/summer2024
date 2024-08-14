@@ -147,7 +147,8 @@ fn open_file() -> String {
     let mut file_name = String::new();
     loop {
         file_name.clear();
-        print!("What is the name of the file you want me to open? (Please Type File Name and Press Enter Twice");
+        print!("What is the name of the file you want me to open? (Please Type File Name and Press Enter Twice):");
+        println!("");
         io::stdout().flush().unwrap();
         io::stdin()
             .read_line(&mut file_name)

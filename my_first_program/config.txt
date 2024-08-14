@@ -1,3 +1,0 @@
-YourUsername
-YourAPIKey
-8080
